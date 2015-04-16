@@ -1,0 +1,29 @@
+
+*{
+  border: 1px dotted red;
+}
+
+.cell {
+  width: 90%;
+  height: 90%;
+  background-color: white;
+  border-radius: 50%;
+  margin: auto;
+}
+
+td {
+  border: 1px solid black;
+  width: 6em;
+  height: 6em;
+  background-color: yellow;
+}
+
+table{
+  margin: auto;
+}
+
+.center{
+  text-align:center;
+  margin: 0 auto;
+}
+
