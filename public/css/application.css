@@ -1,8 +1,3 @@
-
-*{
-  border: 1px dotted red;
-}
-
 .cell {
   width: 90%;
   height: 90%;
@@ -27,3 +22,12 @@ table{
   margin: 0 auto;
 }
 
+h2 {
+  font-size: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.butt {
+  margin-top: 40px;
+}
