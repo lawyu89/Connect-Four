@@ -14,8 +14,6 @@ $(document).ready(function() {
         return $(current)
       }
     }
-
-
   }
 
   $("td").on("click", function(){
@@ -33,4 +31,26 @@ $(document).ready(function() {
   });
 
 
+
+
 });
+
+// stringify
+var stringifyBoard = ""
+
+var board = $('.cell')
+for (var i = 0; i < board.length; i++) {
+  var cell = $(board[i])
+  if ( cell.css('background-color') === "rgb(255, 255, 255)"){
+    stringifyBoard + "0"  //white
+  } else if ( cell.css('background-color') === "rgb(0, 0, 0)"){
+    stringifyBoard + "1" //black
+  } else if ( cell.css('background-color') === "rgb(255, 0, 0)"){
+    stringifyBoard + "2" //red
+  }
+
+
+
+}
+
+
