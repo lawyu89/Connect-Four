@@ -26,8 +26,6 @@ GEM
     eventmachine (1.0.3)
     factory_girl (4.2.0)
       activesupport (>= 3.0.0)
-    faker (1.1.2)
-      i18n (~> 0.5)
     i18n (0.6.1)
     mime-types (2.1)
     mini_portile (0.5.1)
@@ -81,7 +79,6 @@ DEPENDENCIES
   activesupport
   capybara
   factory_girl
-  faker
   pg
   rack-test
   rake
