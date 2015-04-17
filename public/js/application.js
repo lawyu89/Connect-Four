@@ -28,9 +28,16 @@ $(document).ready(function() {
     available_slot = nextEmptyRow(column_num)
     $(available_slot).css('background-color',piece_color)
     counter++;
-
+  });
 
 // stringify
+  $("button").on("click", function(){
+    var winner =''
+    if (counter%2 === 0){
+      winner = "Player 1"
+    } else {
+      winner = "Player 2"
+    }
 
     stringifyBoard = ""
     var board = $('.cell')
@@ -70,25 +77,24 @@ $(document).ready(function() {
 
     for (var i = 0; i < checkColumn.length; i++) {
       if (checkColumn[i].join('').search('1111') >= 0 || checkColumn[i].join('').search('2222') >= 0) {
-        alert('u r winner');
+        alert(winner +' is the winner');
       }
     }
     for (var i = 0; i < checkRow.length; i++) {
       if (checkRow[i].join('').search('1111') >= 0 || checkRow[i].join('').search('2222') >= 0) {
-        alert('u r winner');
+        alert(winner +' is the winner');
       }
     }
     for (var i = 0; i < checkLDiagonal.length; i++) {
       if (checkLDiagonal[i].join('').search('1111') >= 0 || checkLDiagonal[i].join('').search('2222') >= 0) {
-        alert('u r winner');
+        alert(winner +' is the winner');
       }
     }
     for (var i = 0; i < checkRDiagonal.length; i++) {
       if (checkRDiagonal[i].join('').search('1111') >= 0 || checkRDiagonal[i].join('').search('2222') >= 0) {
-        alert('u r winner');
+        alert(winner +' is the winner');
       }
     }
-
   });
 });
 
